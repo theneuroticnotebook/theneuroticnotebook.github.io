@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>I'm an open book.</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript" src="turn.js"></script>
+	<link rel="stylesheet" type="text/css" href="responsive.css">
+</head>
+<body>
+	<div class="welcome">
+		<p>Are you self-conscious?<p>Nervous?</p><!-- <p>Worried about what others think of you?</p> --><p>Unsure of your place in the digital age?</p><br><br><p>Me, too.</p><p>I'm <u>The Neurotic Notebook</u>.</p><p>Grab me by the corner to turn the page.</p>
+	</div>
+	<div class="goodbye">
+		<p>You read me so well.</p><br>
+		<p>I really want to open up to you more. But this preview only lets me say so much...</p>
+		<p>Want to meet the real me? <a href="mailto:theneuroticnotebook@gmail.com">Click here</a> to find out how to get my full print edition.</p>
+
+		<p>I think we'll like each other even better in person.</p>
+
+		<p>Until then, there's always <a href="https://www.instagram.com/theneuroticnotebook">Instagram...</a></p>
+	</div>
+	<div class="t">
+	    <div class="tc rel">
+	        <div class="book" id="book">
+	            <div class="hard"><img src="1a.png"></div> 
+			    <div class="hard"><img src="-1.jpg"></div>
+			    <div class="page even"><img class="even" src="2.png"></div>
+			    <div class="page odd"><img class="odd" src="3.png"></div>
+			    <div class="page even"><img class="even" src="4.png"></div>
+			    <div class="page odd"><img class="odd" src="5.png"></div>
+			    <div class="page"><img src="6.png"></div>
+			    <div class="page"><img src="7.png"></div>
+			    <div class="page"><img src="8.png"></div>
+			    <div class="page"><img src="9.png"></div>
+			    <div class="page"><img src="10.png"></div>
+			    <div class="page"><img src="11.png"></div>
+			    <div class="page"><img src="12.png"></div>
+			    <div class="page"><img src="13.png"></div>   
+			    <div class="page"><img src="14.png"></div>
+			    <div class="page"><img src="15.png"></div>
+			    <div class="page"><img src="16.png"></div>
+			    <div class="page"><img src="17.png"></div>
+			    <div class="page"><img src="18.png"></div>
+			    <div class="page"><img src="19.png"></div>
+			    <div class="page"><img src="20.png"></div>
+			    <div class="page"><img src="21.png"></div>
+			    <div class="page"><img src="22.png"></div>
+			    <div class="page"><img src="23.png"></div>
+			    <div class="hard"><img src="24.png"></div>
+			    <!-- <div class="page"><img src="23.png"></div>
+			    <div class="hard last">
+			    	<div class="lastText"><br><br><br><br><br><br><br><br><br><br><br><br>Wow! Already on the last page of the preview? I hope you've enjoyed what you read so far. If you'd like to be notified when the full book becomes available for purchase, <a href="mailto:theneuroticnotebook@gmail.com">please email me here</a>.<p>Bisous,<br>Lena<p></div>
+			    </div> -->
+			    <div class="hard"><img src="back2.png"></div>
+	        </div>
+	    </div>
+	</div>
+	<script type="text/javascript" src="responsive.js"></script>
+	<script>
+			$(window).bind('keydown', function(e){
+	    		if (e.keyCode==37)
+	        $('#book').turn('previous');
+	    		else if (e.keyCode==39)
+	        $('#book').turn('next');
+			});
+	</script>
+</body>
+</html>
+
+<!-- Check out http://jsfiddle.net/kmturley/GGea5/1/ if you forget -->
