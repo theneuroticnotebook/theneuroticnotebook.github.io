@@ -32,16 +32,18 @@ body.hide-overflow {
     margin-left: 20%;
 }
 
-.goodbye {
-    position: fixed;
-    height: 100%;
-    width: 22vw;
-    top: 30vh;
-    right: 23vw;
-    overflow-x: hidden;
+.goodbye > p {
     font-family: monospace, Courier;
     font-size: 1.2vw;
+    text-align: left;
+    margin-left: 15%;
+    margin-right: 19%;
 }
+
+.goodbye {
+    margin-top: 37%;
+}
+
 
 /*Max's center shadow*/
 
